@@ -1,0 +1,21 @@
+/**
+ * MyQueue is a simple queue (FIFO) implementation based on MyLinkedList.
+ *
+ * @param <T> the type of elements stored
+ */
+public class MyQueue<T extends Comparable<T>> {
+
+    private MyLinkedList<T> list = new MyLinkedList<>();
+
+    /** Adds an element to the end of the queue */
+    public void enqueue(T item) { ... }
+
+    /** Removes and returns the first element */
+    public T dequeue() { ... }
+
+    /** Returns the first element without removing */
+    public T peek() { ... }
+
+    /** Checks if the queue is empty */
+    public boolean isEmpty() { ... }
+}

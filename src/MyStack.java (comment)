@@ -1,0 +1,21 @@
+/**
+ * MyStack is a simple stack (LIFO) implementation based on MyArrayList.
+ *
+ * @param <T> the type of elements stored
+ */
+public class MyStack<T extends Comparable<T>> {
+
+    private MyArrayList<T> list = new MyArrayList<>();
+
+    /** Pushes an element onto the stack */
+    public void push(T item) { ... }
+
+    /** Removes and returns the top element */
+    public T pop() { ... }
+
+    /** Returns the top element without removing */
+    public T peek() { ... }
+
+    /** Checks if the stack is empty */
+    public boolean isEmpty() { ... }
+}

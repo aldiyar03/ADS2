@@ -1,0 +1,86 @@
+/**
+ * MyLinkedList is a doubly linked list implementation of MyList interface.
+ * Supports add, remove, get, sort, and other list operations with nodes.
+ *
+ * @param <T> the type of elements stored, must be Comparable
+ */
+public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
+
+    private class MyNode { ... }
+
+    private MyNode head;
+    private MyNode tail;
+    private int size;
+
+    /** Adds an element to the end of the list */
+    @Override
+    public void add(T item) { ... }
+
+    /** Adds an element at a specific index */
+    @Override
+    public void add(int index, T item) { ... }
+
+    /** Sets the element at a specific index */
+    @Override
+    public void set(int index, T item) { ... }
+
+    /** Gets the element at a specific index */
+    @Override
+    public T get(int index) { ... }
+
+    /** Gets the first element */
+    @Override
+    public T getFirst() { ... }
+
+    /** Gets the last element */
+    @Override
+    public T getLast() { ... }
+
+    /** Adds an element at the start */
+    @Override
+    public void addFirst(T item) { ... }
+
+    /** Adds an element at the end */
+    @Override
+    public void addLast(T item) { ... }
+
+    /** Removes an element at a specific index */
+    @Override
+    public void remove(int index) { ... }
+
+    /** Removes the first element */
+    @Override
+    public void removeFirst() { ... }
+
+    /** Removes the last element */
+    @Override
+    public void removeLast() { ... }
+
+    /** Sorts the list using bubble sort */
+    @Override
+    public void sort() { ... }
+
+    /** Finds the first index of an object */
+    @Override
+    public int indexOf(Object object) { ... }
+
+    /** Finds the last index of an object */
+    @Override
+    public int lastIndexOf(Object object) { ... }
+
+    /** Checks if an object exists */
+    @Override
+    public boolean exists(Object object) { ... }
+
+    /** Converts the list to an array */
+    @Override
+    public Object[] toArray() { ... }
+
+    /** Clears the list */
+    @Override
+    public void clear() { ... }
+
+    /** Returns the number of elements */
+    @Override
+    public int size() { ... }
+}

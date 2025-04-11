@@ -1,0 +1,25 @@
+/**
+ * MyMinHeap is a min-heap implementation based on MyArrayList.
+ * Always keeps the smallest element at the root.
+ *
+ * @param <T> the type of elements stored, must be Comparable
+ */
+public class MyMinHeap<T extends Comparable<T>> {
+
+    private MyArrayList<T> list = new MyArrayList<>();
+
+    /** Adds an element and maintains heap property */
+    public void add(T item) { ... }
+
+    /** Removes and returns the smallest element */
+    public T poll() { ... }
+
+    /** Returns the smallest element without removing */
+    public T peek() { ... }
+
+    /** Moves the last element up to restore heap */
+    private void heapifyUp() { ... }
+
+    /** Moves the root element down to restore heap */
+    private void heapifyDown() { ... }
+}
